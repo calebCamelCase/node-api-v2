@@ -1,0 +1,13 @@
+<%- include('../partials/header'); %>
+
+<main class="main">
+    <h2><%= name %></h2>
+
+    <section class="section">
+        <% data.forEach(item => { %>
+            <h3><%= item.fName %> <%= item.lName %></h3>
+        <% }) %>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>
